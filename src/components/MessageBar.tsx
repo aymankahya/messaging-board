@@ -11,7 +11,7 @@ function MessageBar({ notifyAdding, user }: MessageBarProp) {
   const [inputMessage, setInputMessage] = useState<string>("");
 
   const handlePostMessage = async () => {
-    await fetch(`${import.meta.env.VITE_SERVER_URL}/new`, {
+    await fetch(`https://message-board-app-server.fly.dev/new`, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
