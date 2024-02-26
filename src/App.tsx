@@ -65,7 +65,7 @@ function App() {
   useEffect(() => {
     const fetchMessages = async () => {
       const fetchedRes = await fetch(
-        `${import.meta.env.VITE_SERVER_URL}/messages`
+        `https://message-board-app-server.fly.dev/messages`
       );
       const fetchedMessages = await fetchedRes.json();
       setMessages(fetchedMessages);
