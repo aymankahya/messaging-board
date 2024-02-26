@@ -11,7 +11,7 @@ function MessageBar({ notifyAdding, user }: MessageBarProp) {
   const [inputMessage, setInputMessage] = useState<string>("");
 
   const handlePostMessage = async () => {
-    await fetch("http://localhost:3000/new", {
+    await fetch(`${import.meta.env.VITE_SERVER_URL}/new`, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
