@@ -4,6 +4,18 @@
 
 Mini Message Board is a simple web application developed as part of The Odin Project's fullstack curriculum. This project serves as an introduction to fullstack development especially server-side domain, combining basic frontend and backend technologies to create a functional message board system with a clean, responsive user interface.
 
+<p align="center">
+  <a href="https://app.netlify.com/sites/mesaging-board/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/d8282bfb-dcb0-4ce3-a019-218906e31d64/deploy-status" alt="Netlify Status" />
+  </a>
+</p>
+
+<p align="center">
+<img src="https://github.com/aymankahya/messaging-board/assets/63832251/ee961b59-c648-4e0c-bfa9-c82195b7d55f" alt="Messaging App Board"/>
+</p>
+
+
+
 ## Key Features
 
 - Message board functionality with the ability to post and view messages
