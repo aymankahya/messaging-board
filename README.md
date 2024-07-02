@@ -1,30 +1,80 @@
-# React + TypeScript + Vite
+# Mini Message Board
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+Mini Message Board is a simple web application developed as part of The Odin Project's fullstack curriculum. This project serves as an introduction to fullstack development especially server-side domain, combining basic frontend and backend technologies to create a functional message board system with a clean, responsive user interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
 
-## Expanding the ESLint configuration
+- Message board functionality with the ability to post and view messages
+- Simple user identification system
+- RESTful API for message handling
+- Persistent data storage using MongoDB
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+### Frontend
+- React.js with TypeScript
+- Material UI
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+### Backend
+- Node.js with Express.js
+- TypeScript for type-safe development
+- MongoDB for database management
+- Mongoose as the ODM (Object Document Mapper)
+
+### Deployment
+- Frontend deployed on Netlify
+- Backend deployed on Fly.io
+
+## Key Implementations
+
+1. **Message Board**: Users can post messages and view all messages on the board.
+
+2. **User Identification**: Implemented a simple system to allow users to set a username or post as "Anonymous". This is managed client-side using local storage.
+
+3. **User Interface**: Utilized Material-UI components and custom styling to ensure a consistent look across devices.
+
+4. **API Integration**: Developed a RESTful API with endpoints for fetching messages and posting new ones.
+
+5. **Database Integration**: Integrated MongoDB to store and retrieve message data.
+
+6. **TypeScript Usage**: Leveraged TypeScript in both frontend and backend for enhanced code quality and developer experience.
+
+## Running the Project Locally
+
+1. Clone the repository
+2. Navigate to the project root and install dependencies
+```bash
+npm install
+cd backend
+npm install
 ```
+3. Start the backend server
+```bash
+npm run dev
+```
+4. In a new terminal, start the frontend development server
+```bash
+cd ..
+npm run dev
+```
+5. Open your browser and visit `http://localhost:5173`
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Future Enhancements
+
+- Implement real-time updates using WebSockets
+- Add user authentication and authorization
+- Introduce message threading and replies
+- Implement message search functionality
+
+## Conclusion
+
+This Mini Message Board project has been a valuable learning experience in fullstack development. Through building this application, I've gained practical insights into:
+
+1. Frontend Development: Using React with TypeScript to create a responsive user interface.
+2. Backend Architecture: Setting up an Express.js server to handle API requests.
+3. Database Integration: Implementing basic CRUD operations with MongoDB.
+4. API Development: Creating and consuming RESTful endpoints.
+
+While this project is a starting point in the fullstack world, backend in particular. It has provided hands-on experience with connecting frontend and backend components, crafting the server-side of a fullstack application and creating RESTful endpoints as well as discovering database management and integration through ODM such as mongoose.
